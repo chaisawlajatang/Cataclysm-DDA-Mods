@@ -1,0 +1,10 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "drug-effects",
+    "name": "Drug Effects",
+    "description": "Brings back old drug effects.",
+    "category": "balance",
+    "dependencies": [ "dda" ]
+  }
+]

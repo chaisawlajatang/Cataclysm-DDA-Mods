@@ -1,0 +1,53 @@
+[
+  {
+    "id": "control_laptop",
+    "type": "TOOL",
+    "name": { "str": "control laptop" },
+    "description": "A modified laptop, now capable of transmitting in the ultra-high frequencies utilized by robots.  Activate it to command robots from afar.",
+    "weight": "2721 g",
+    "volume": "1 L",
+    "price": 10000,
+    "price_postapoc": 8000,
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ",",
+    "color": "yellow",
+    "ammo": [ "battery" ],
+    "charges_per_use": 2,
+    "use_action": "ROBOTCONTROL",
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "control_laptop",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_TOOLS",
+    "skill_used": "electronics",
+    "skills_required": [ "computer", 4 ],
+    "difficulty": 7,
+    "time": "25 m",
+    "book_learn": [ [ "recipe_lab_elec", 7 ], [ "textbook_robots", 7 ] ],
+    "using": [ [ "soldering_standard", 14 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "tools": [ [ [ "software_hacking", -1 ] ] ],
+    "components": [ [ [ "laptop", 1 ] ], [ [ "receiver", 2 ] ], [ [ "e_scrap", 2 ] ], [ [ "antenna", 1 ] ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "nanofab_recipes",
+    "//": "Very rare high level loot. This list doesn't spawn anywhere directly, it is used to create the recipes inside nanofabricator templates. ",
+    "magazine": 100,
+    "subtype": "distribution",
+    "entries": [ { "item": "control_laptop", "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "tools_robotics",
+    "//": "tools and equipment you might find on robotics laboratories.",
+    "items": [ { "item": "control_laptop", "prob": 10 } ]
+  }
+]

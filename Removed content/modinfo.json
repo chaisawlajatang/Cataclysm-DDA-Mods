@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "removed_content",
+    "name": "Removed content",
+    "authors": [ "Anon" ],
+    "maintainers": [ "Anon" ],
+    "description": "Brings deleted content back",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]
