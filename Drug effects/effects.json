@@ -1,5 +1,5 @@
 [
-{
+  {
     "type": "effect_type",
     "id": "adrenaline",
     "name": [ "Adrenaline Comedown", "Adrenaline Rush" ],
@@ -19,14 +19,7 @@
       "per_mod": [ -1 ],
       "stamina_min": [ -2 ]
     },
-    "scaling_mods": {
-      "speed_mod": [ 30 ],
-      "str_mod": [ 5 ],
-      "dex_mod": [ 4 ],
-      "int_mod": [ -7 ],
-      "per_mod": [ 2 ],
-      "stamina_min": [ 4 ]
-    }
+    "scaling_mods": { "speed_mod": [ 30 ], "str_mod": [ 5 ], "dex_mod": [ 4 ], "int_mod": [ -7 ], "per_mod": [ 2 ], "stamina_min": [ 4 ] }
   },
   {
     "type": "effect_type",
@@ -85,13 +78,25 @@
     "apply_message": "You feel lightheaded.",
     "int_dur_factor": "100 m",
     "miss_messages": [ [ "You feel woozy.", 1 ] ],
-    "base_mods": { "str_mod": [ 1 ], "vomit_chance": [ -43 ], "sleep_chance": [ -1003 ], "sleep_min": [ 2500 ], "sleep_max": [ 3500 ] },
+    "base_mods": {
+      "str_mod": [ 1 ],
+      "vomit_chance": [ -43 ],
+      "sleep_chance": [ -1003 ],
+      "sleep_min": [ 15000 ],
+      "sleep_max": [ 21000 ],
+      "pkill_amount": [ 3 ],
+      "pkill_max_val": [ 3 ],
+      "pkill_min": [ 1 ],
+      "pkill_tick": [ 45 ]
+    },
     "scaling_mods": {
       "str_mod": [ -0.67 ],
       "per_mod": [ -1 ],
       "dex_mod": [ -1 ],
       "int_mod": [ -1.42 ],
       "vomit_chance": [ 21 ],
+      "pkill_max_val": [ 10 ],
+      "pkill_tick": [ -10 ],
       "sleep_chance": [ 501 ]
     }
   },
@@ -114,4 +119,4 @@
     "scaling_mods": { "speed_mod": [ -0.25 ], "dex_mod": [ -0.1 ], "int_mod": [ -0.16 ], "per_mod": [ -0.14 ] },
     "miss_messages": [ [ "You feel woozy.", 1 ] ]
   }
- ]
+]
