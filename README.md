@@ -10,10 +10,13 @@ Silly and nonsense content. Leadworks, control laptop, craftable bows etc separa
 "Leadworks - old"
 
 Brings back Leadworks guns - for versions before nested containers addon. Replace the appropriate json in Removed Content mod with this file.
+
 Мод на пушки Лидворкс для до-кармашечных версий. Можно скопировать в папку с предыдущим модом вместо соотетствующего файла.
 
 "Drug effects"
+
 Cancels an old drug rebalance.
+
 Отменяет Кевинов ребаланс веществ.
 
 "No Migo Shooters"
