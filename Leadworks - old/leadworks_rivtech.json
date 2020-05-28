@@ -297,6 +297,40 @@
     ]
   },
   {
+    "id": "rm99_pistol",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": { "str": "RM99 revolver" },
+    "//": "Bear in mind that most revolvers don't reach $1K.  Expensive.",
+    "description": "Considered overkill by some, the Rivtech M99 remains an exceedingly powerful addition to the arsenal of any gunslinger.",
+    "weight": "1204 g",
+    "volume": "750 ml",
+    "price": 210000,
+    "price_postapoc": 8000,
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [ "superalloy", "ceramic" ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": [ "8x40mm" ],
+    "skill": "pistol",
+    "ranged_damage": { "damage_type": "bullet", "amount": 10 },
+    "dispersion": 175,
+    "durability": 9,
+    "clip_size": 5,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "flags": [ "WATERPROOF_GUN", "RELOAD_ONE", "NEVER_JAMS" ]
+  },
+  {
     "id": "rm360_carbine",
     "looks_like": "ar15",
     "type": "GUN",
@@ -352,6 +386,23 @@
     "reliability": 10,
     "reload_time": 60,
     "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "8x40_speedloader5",
+    "looks_like": "38_speedloader",
+    "type": "MAGAZINE",
+    "name": { "str": "RMGS5 8x40mm speedloader" },
+    "description": "This speedloader, made by Rivtech for use with RM99 revolver, can hold 5 rounds of 8x40mm caseless rounds and quickly reload a compatible revolver.",
+    "weight": "92 g",
+    "volume": "250 ml",
+    "price": 8000,
+    "price_postapoc": 250,
+    "material": [ "superalloy", "plastic" ],
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": [ "8x40mm" ],
+    "capacity": 5,
+    "flags": [ "SPEEDLOADER" ]
   },
   {
     "id": "360_400_mag",
@@ -923,14 +974,10 @@
     "ammo": 50,
     "magazine": 100,
     "items": [
-      [ "aspirin", 85 ],
-      [ "caffeine", 25 ],
-      { "group": "tobacco_products", "prob": 161 },
-      [ "sponge", 10 ],
-      { "group": "ammo_pocket_batteries_full", "prob": 50 },
       [ "l_enforcer_45", 4 ],
       [ "l_sp_45", 3 ],
-      [ "l_mp_45", 2 ]
+      [ "l_mp_45", 2 ],
+      { "item": "rm99_pistol", "prob": 1 }
     ]
   },
   {
@@ -975,7 +1022,10 @@
     "type": "item_group",
     "id": "guns_pistol_obscure",
     "//": "Imported or otherwise very obscure pistols.",
-    "items": [ { "item": "l_bak_223", "prob": 80, "charges-min": 0, "charges-max": 5 } ]
+    "items": [ 
+      { "item": "l_bak_223", "prob": 80, "charges-min": 0, "charges-max": 5 },
+      { "item": "rm99_pistol", "prob": 150, "charges-min": 0, "charges-max": 5 }	  
+    ]
   },
   {
     "type": "item_group",
@@ -998,6 +1048,12 @@
   },
   {
     "type": "item_group",
+    "id": "military",
+    "subtype": "distribution",
+    "entries": [ { "item": "rm99_pistol", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
     "id": "guns_cop",
     "//": "Police issue weapons of all types",
     "items": [ { "item": "l_enforcer_45", "prob": 10, "charges-min": 0, "charges-max": 6 } ]
@@ -1012,7 +1068,8 @@
       [ "9mm_speedloader7", 10 ],
       [ "ppkmag", 15 ],
       [ "lw12mag", 5 ],
-      [ "lw21mag", 5 ]
+      [ "lw21mag", 5 ],
+      [ "8x40_speedloader5", 5 ]
     ]
   },
   {
