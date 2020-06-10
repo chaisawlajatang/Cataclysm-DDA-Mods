@@ -30,3 +30,9 @@ Removes Migo-slavers and Migo-scouts.
 Makes bows great again. Partially cancels the recent bow rebalance - armored targets are not impervious to arrows now.
 
 Частично откатывает последний ребаланс луков. Луки наносят приблизительно такой же урон по обычным целям и способны убить бронированные цели.
+
+#### **Weaker turrets**
+
+Reduces turret range, reduces NV radius to 1, removes return fire feature, turrets no longer drop any ammo.
+
+Снижает дальнобойность турелей, снижает радиус ночного зрения до 1, турели не стреляют в ответ и не оставляют патронов после смерти.
