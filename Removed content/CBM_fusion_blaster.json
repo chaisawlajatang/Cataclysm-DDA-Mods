@@ -1,0 +1,132 @@
+[
+  {
+    "id": "bio_blaster",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": "Fusion Blaster Arm CBM",
+    "description": "Your left arm has been replaced by a heavy-duty fusion blaster!  You may use your energy banks to fire a damaging heat ray.  However, you are unable to use or carry two-handed items, and your strength limits what you can use with your one hand.",
+    "price": 220000,
+    "difficulty": 3
+  },
+  {
+    "id": "bio_blaster",
+    "type": "bionic",
+    "name": "Fusion Blaster Arm",
+    "description": "Your left arm has been surgically replaced by a heavy-duty fusion blaster!  You may use your energy banks to fire a damaging heat ray.  However, you are unable to use or carry two-handed items, and your strength limits what you can use with your one hand.",
+    "occupied_bodyparts": [ [ "arm_l", 20 ], [ "hand_l", 5 ] ],
+    "act_cost": "100 kJ",
+    "fake_item": "bio_blaster_gun",
+    "flags": [ "BIONIC_GUN" ]
+  },
+  {
+    "id": "bio_blaster_gun",
+    "type": "GUN",
+    "name": "fusion blaster",
+    "description": "this a pseudo item",
+    "volume": 12,
+    "price": 0,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "magenta",
+    "skill": "rifle",
+    "range": 30,
+    "ranged_damage": { "damage_type": "stab", "amount": 22, "armor_penetration": 15 },
+    "dispersion": 30,
+    "durability": 10,
+    "loudness": 12,
+    "modes": [ [ "DEFAULT", "single shot", 1 ], [ "burst", "triple shot", 3 ] ],
+    "reload": 500,
+    "built_in_mods": [ "bio_powershot" ],
+    "ammo_effects": [ "PLASMA", "EXPLOSIVE", "FLAME" ],
+    "flags": [ "NEVER_JAMS", "TRADER_AVOID" ]
+  },
+  {
+    "id": "unbio_blaster_gun",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "fusion blaster rifle",
+    "description": "A cyborg's fusion blaster arm, cannibalized and converted into a rifle.  This improvised weapon is powered by a standard UPS connection.",
+    "weight": 2680,
+    "volume": 10,
+    "price": 420000,
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "magenta",
+    "skill": "rifle",
+    "range": 30,
+    "ranged_damage": { "damage_type": "stab", "amount": 22 },
+    "dispersion": 90,
+    "durability": 6,
+    "loudness": 15,
+    "ups_charges": 40,
+    "reload": 600,
+    "valid_mod_locations": [
+      [ "emitter", 1 ],
+      [ "grip", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "rail mount", 1 ],
+      [ "underbarrel mount", 1 ]
+    ],
+    "ammo_effects": [ "PLASMA", "EXPLOSIVE", "FLAME", "NEVER_JAMS" ],
+    "flags": [ "NO_UNLOAD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "unbio_blaster_gun",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "electronics",
+    "skills_required": [ "fabrication", 4, "gun", 2 ],
+    "difficulty": 6,
+    "time": "30 m",
+    "book_learn": [ [ "recipe_lab_elec", 5 ] ],
+    "qualities": [ { "id": "SCREW_FINE", "level": 1 } ],
+    "tools": [ [ [ "soldering_standard", 20, "LIST" ], [ "small_repairkit", 20 ], [ "large_repairkit", 10 ] ] ],
+    "components": [
+      [ [ "bio_blaster", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "2x4", 1 ], [ "stick", 1 ] ],
+      [ [ "cable", 3 ] ],
+      [ [ "plastic_chunk", 3 ] ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bionics",
+    "items": [ [ "bio_blaster", 10 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_mil",
+    "items": [ [ "bio_blaster", 10 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_op",
+    "subtype": "distribution",
+    "//": "What the commandos get.",
+    "items": [ [ "bio_blaster", 10 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "spider",
+    "magazine": 100,
+    "items": [ [ "bio_blaster", 10 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "ant_food",
+    "items": [ [ "bio_blaster", 10 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_subs",
+    "subtype": "distribution",
+    "//": "Bionics dropped by substation mini-boss.",
+    "items": [ [ "bio_blaster", 10 ] ]
+  }
+]
