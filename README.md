@@ -3,9 +3,9 @@ Bunch of mods for me and other people.
 
 #### **Removed content**
 
-Silly and nonsense content, removed from the mainline. Atomic cars, craftable bows, control laptop, handmade guns, laser turrets (they may spawn at military outposts again), Leadworks&Rivtech guns, poor student profession, quantum panels, tankbots, chickenbots and sewer brew&tainted tornado. Everything goes in separate jsons - feel free to safely remove any parts of this mod you don't like (laser_turret_outpost is dependent on laser_turret though).
+Silly and nonsense content, removed from the mainline. Atomic cars, craftable bows, control laptop, handmade guns (raiguns, pneumatic guns etc), laser turrets (they may spawn at military outposts again), Leadworks&Rivtech guns, poor student profession, quantum panels, tankbots, chickenbots and sewer brew&tainted tornado. Everything goes in separate jsons - feel free to safely remove any parts of this mod you don't like (laser_turret_outpost is dependent on laser_turret though).
 
-Содержит нинужный силлинонсенс контент. Атомные машины, крафтабельные луки, хакерский ноутбук, самодельные пушки, лазерные турельки, (они снова могут спавниться на военных постах), пушки Лидворкс и Ривтех, профессия бедного студента, квантовые панели, танкоботы, шагоботы и мутантские напитки. Все лежит в жсонах - так что можно спокойно удалить отдельные куски, если что не нравится (laser_turret_outpost требует наличия laser_turret).
+Содержит нинужный силлинонсенс контент. Атомные машины, крафтабельные луки, хакерский ноутбук, самодельные пушки (рельсотроны, пневмопушки и т.д.), лазерные турельки, (они снова могут спавниться на военных постах), пушки Лидворкс и Ривтех, профессия бедного студента, квантовые панели, танкоботы, шагоботы и мутантские напитки. Все лежит в жсонах - так что можно спокойно удалить отдельные куски, если что не нравится (laser_turret_outpost требует наличия laser_turret).
 
 #### **Leadworks - old**
 
@@ -30,3 +30,9 @@ Removes Migo-slavers and Migo-scouts.
 Makes bows great again. Partially cancels the recent bow rebalance - armored targets are not impervious to arrows now.
 
 Частично откатывает последний ребаланс луков. Луки наносят приблизительно такой же урон по обычным целям и способны убить бронированные цели.
+
+#### **Weaker turrets**
+
+Reduces turret range, reduces NV radius to 1, removes return fire feature, turrets no longer drop any ammo.
+
+Снижает дальнобойность турелей, снижает радиус ночного зрения до 1, турели не стреляют в ответ и не оставляют патронов после смерти.
