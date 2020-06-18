@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "removed_content_nonpocket",
+    "name": "Removed content (without pockets)",
+    "authors": [ "Anon" ],
+    "maintainers": [ "Anon" ],
+    "description": "Brings deleted content back. For versions without nested containers",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]

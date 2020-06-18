@@ -1,0 +1,18 @@
+[
+  {
+    "type": "item_group",
+    "id": "bionics",
+    "items": [ [ "bio_storage", 10 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_common",
+    "subtype": "distribution",
+    "items": [ [ "bio_storage", 10 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "sewage_plant",
+    "items": [ [ "bio_storage", 10 ] ]
+  }
+]
