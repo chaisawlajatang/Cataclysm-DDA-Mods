@@ -3,7 +3,7 @@
     "type": "MOD_INFO",
     "ident": "drug-effects",
     "name": "Drug Effects",
-    "description": "Brings back old drug effects.",
+    "description": "Makes drug effects much more significant. Makes some alcohol drinks stronger.",
     "category": "balance",
     "dependencies": [ "dda" ]
   }
