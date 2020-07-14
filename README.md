@@ -17,7 +17,7 @@ For versions after nested containers addon (10614). Silly and nonsense content, 
 
 Significantly increases drug effects (they affect more stats, effects are approx x1.5-x2 stronger). Makes strong alcohol (i.e. vodka, whiskey) stronger.
 
-Отменяет Кевинов ребаланс веществ, теперь вещества намного мощнее. Значительно усиливает эффекты от веществ (влияют на больше статов, эффект в 1.5-2 раза сильнее). Крепкий алкоголь теперь действительно крепкий.
+Значительно усиливает эффекты от веществ (влияют на больше статов, эффект в 1.5-2 раза сильнее). Крепкий алкоголь теперь действительно крепкий.
 
 #### **No Migo Shooters**
 
@@ -27,7 +27,7 @@ Removes Migo-slavers and Migo-scouts.
 
 #### **Realistic bows**
 
-Makes bows great again. Partially cancels the recent bow rebalance - armored targets are not impervious to arrows now.
+Makes bows great again. Somewhat balances damage and accuracy - armored targets are not impervious to arrows now.
 
 Частично откатывает последний ребаланс луков. Луки наносят приблизительно такой же урон по обычным целям и способны убить бронированные цели.
 
