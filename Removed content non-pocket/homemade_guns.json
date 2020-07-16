@@ -206,7 +206,7 @@
     "volume": "3 L",
     "bashing": 12,
     "to_hit": -1,
-    "ranged_damage": { "damage_type": "stab", "amount": 5 },
+    "ranged_damage": { "damage_type": "stab", "amount": 20 },
     "range": 20,
     "dispersion": 30,
     "durability": 7,
